@@ -1,0 +1,232 @@
+/* Main grid layout */
+.background {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Left side layout */
+.leftSide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Right side layout */
+.rightSide {
+    background: #F0F4F6;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 15px;
+}
+
+/* Left side grid item positioning */
+.div1 {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+}
+
+.div2, .div3, .div4 {
+    grid-row: 2;
+}
+
+.div2 {
+    grid-column: 1 / span 2;
+}
+
+.div3 {
+    grid-column: 3 / span 2;
+}
+
+.div4 {
+    grid-column: 5 / span 2;
+}
+
+.div5 {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+}
+
+.div6 {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+}
+
+.div7 {
+    grid-column: 4 / span 3;
+    grid-row: 4;
+}
+
+.div8 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.div9 {
+    grid-column: 3 / span 4;
+    grid-row: 5;
+}
+
+/* Right side grid items */
+.div10, .div11, .div12, .div15 {
+    width: 100%;
+}
+
+.div13, .div14 {
+    display: inline-block;
+}
+
+.div13 {
+    font-weight: bold;
+    text-align: right;
+}
+
+.div14 {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Parent grid in right side panels */
+.parentr {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+.div1r {
+    justify-self: center;
+}
+
+.div2r {
+    font-weight: bold;
+}
+
+.div3r {
+    color: #727272;
+    text-align: right;
+}
+
+/* Button styling */
+.buttons {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #afafaf;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #f7e7ff;
+    color: #000000;
+    border-color: #8700f8;
+}
+
+#btnCancel {
+    width: 100%;
+    height: 40px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 10px;
+    text-align: center;
+    border-color: #eeeeee;
+    cursor: pointer;
+}
+
+#btnSubscribe {
+    width: 100%;
+    height: 40px;
+    background-color: #cc9aff;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    border-color: #cc9aff;
+    cursor: pointer;
+}
+
+/* Text styling */
+#title {
+    color: #8700f8;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#sectionTitle {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#information {
+    color: #afafaf;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.billedTitle {
+    color: #727272;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Form elements */
+.itBillTo, .select {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #a4a4a4;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.itBillTo {
+    color: #a4a4a4;
+}
+
+.select {
+    color: #000000;
+}
+
+/* Flex container for buttons */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+}
+
+/* Total section */
+.div13, .div14 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
